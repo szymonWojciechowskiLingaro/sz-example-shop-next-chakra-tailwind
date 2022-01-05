@@ -1,0 +1,117 @@
+:root {
+  --brand-light: #f3e6d8;
+  --brand: #c79e6a;
+  --brand-dark: #5f4d36;
+
+  --cta-light: #dcf0f1;
+  --cta: #2c7a7b;
+  --cta-dark: #385c5f;
+
+  --warning-light: #fff3cf;
+  --warning: #f4d02f;
+  --warning-dark: #746220;
+
+  --success-light: #dff8d4;
+  --success: #6cdf4e;
+  --success-dark: #39692b;
+
+  --danger-light: #ffd7cf;
+  --danger: #f6544b;
+  --danger-dark: #752e28;
+
+  --text-base: #000000;
+  --text-primary: #000000;
+  --text-secondary: white;
+  --text-brand: #2c7a7b;
+  --text-cta: #c79e6a;
+  --text-success: #6cdf4e;
+  --text-danger: #f6544b;
+  --text-warning: #f4d02f;
+  --text-gray-light: #d2d1d1;
+  --text-gray: #bfbfbe;
+  --text-gray-dark: #989797;
+
+  --hover: rgba(0, 0, 0, 0.075);
+  --hover-1: rgba(0, 0, 0, 0.15);
+  --hover-2: rgba(0, 0, 0, 0.25);
+
+  --white: #ffffff;
+  --gray-lightest: #faf9f8;
+  --gray-lighter: #e6e5e5;
+  --gray-light: #d2d1d1;
+  --gray: #bfbfbe;
+  --gray-dark: #989797;
+  --gray-darker: #706f6f;
+  --gray-darkest: #494948;
+  --black: #212121;
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+    'Helvetica', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary);
+  color: var(--text-primary);
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
