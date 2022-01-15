@@ -24,13 +24,13 @@
     "jsx": "preserve",
     "paths": {
       "@styles/*": [
-        "styles/*"
+        "src/styles/*"
       ],
       "@components/*": [
-        "components/*"
+        "src/components/*"
       ],
       "@pages/*": [
-        "@pages/*"
+        "src/@pages/*"
       ],
       "@settings/*": [
         "src/settings/*"
@@ -46,8 +46,9 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "additional.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
