@@ -1,5 +1,3 @@
 @tailwind base;
-@import 'src/styles/base.css';
 @tailwind components;
-@import 'src/styles/components.css';
 @tailwind utilities;
