@@ -1,7 +1,7 @@
 import cn from "classnames";
 import Image from "next/image";
 import type { FC } from "react";
-// import { useUI } from "@contexts/ui.context";
+import { useUI } from "@contexts/ui.context";
 import usePrice from "@framework/product/use-price";
 import { Product } from "@framework/types";
 
@@ -26,18 +26,18 @@ const ProductCard: FC<ProductProps> = ({
 	imgHeight = 440,
 	imgLoading,
 }) => {
-	// const { openModal, setModalView, setModalData } = useUI();
+	const { openModal, setModalView, setModalData } = useUI();
 	const placeholderImage = `/assets/placeholder/products/product-${variant}.svg`;
 	const { price, basePrice, discount } = usePrice({
 		amount: product.sale_price ? product.sale_price : product.price,
 		baseAmount: product.price,
 		currencyCode: "USD",
 	});
-	// function handlePopupView() {
-	// 	setModalData({ data: product });
-	// 	setModalView("PRODUCT_VIEW");
-	// 	return openModal();
-	// }
+	function handlePopupView() {
+		setModalData({ data: product });
+		setModalView("PRODUCT_VIEW");
+		return openModal();
+	}
 	return (
 		<div
 			className={cn(
@@ -53,7 +53,7 @@ const ProductCard: FC<ProductProps> = ({
 				},
 				className
 			)}
-			// onClick={handlePopupView}
+			onClick={handlePopupView}
 			role="button"
 			title={product?.name}
 		>
