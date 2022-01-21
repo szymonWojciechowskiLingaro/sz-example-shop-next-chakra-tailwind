@@ -38,6 +38,12 @@
       "@contexts/*": [
         "src/contexts/*"
       ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
       "@framework/*": [
         "src/framework/basic-rest/*"
       ]
