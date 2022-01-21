@@ -7,6 +7,7 @@ import { useRef, FC } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ManagedUIContext } from '@contexts/ui.context'
 import ManagedModal from '@components/common/modal/managed-modal'
+import Drawer from '@components/common/drawer'
 
 const Noop: FC = ({ children }) => <>{children}</>
 
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} key={router.route} />
           </Layout>
           <ManagedModal />
+          <Drawer />
         </ManagedUIContext>
       </QueryClientProvider>
     </ChakraProvider>
