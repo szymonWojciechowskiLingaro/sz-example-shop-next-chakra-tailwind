@@ -45,7 +45,7 @@
         "src/containers/*"
       ],
       "@framework/*": [
-        "src/framework/basic-rest/*"
+        "src/framework/*"
       ]
     },
     "incremental": true
