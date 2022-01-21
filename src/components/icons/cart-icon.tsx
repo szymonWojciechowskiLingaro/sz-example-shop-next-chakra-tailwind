@@ -1,8 +1,8 @@
 const CartIcon = ({
 	color = "currentColor",
-	width = "22px",
-	height = "22px",
-	className = "md:w-5 md:h-5",
+	width = "18px",
+	height = "18px",
+	className = "md:w-4 xl:w-5 md:h-4 xl:h-5",
 }) => {
 	return (
 		<svg
