@@ -6,6 +6,7 @@ import { chakraTheme } from '@pages/_app/config'
 import { useRef, FC } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ManagedUIContext } from '@contexts/ui.context'
+import ManagedModal from '@components/common/modal/managed-modal'
 
 const Noop: FC = ({ children }) => <>{children}</>
 
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Layout pageProps={pageProps}>
             <Component {...pageProps} key={router.route} />
           </Layout>
+          <ManagedModal />
         </ManagedUIContext>
       </QueryClientProvider>
     </ChakraProvider>
