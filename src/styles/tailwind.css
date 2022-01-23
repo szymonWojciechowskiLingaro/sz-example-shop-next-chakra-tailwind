@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import './scrollbar.css';
 @import './swiper-carousel.css';
+@import './custom-plugins.css';
+@import './chrome-bug.css';
 
 /* Write your own custom base styles here */
 @layer base {

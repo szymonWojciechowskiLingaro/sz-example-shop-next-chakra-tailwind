@@ -1,15 +1,13 @@
-import { Box, SimpleGrid, Icon } from '@chakra-ui/react'
+import { SimpleGrid, Icon } from '@chakra-ui/react'
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc'
 import { Feature } from '@components/common/FeatureCard'
-import SectionHeader from "@components/common/section-header";
-import React from "react";
+import SectionHeader from '@components/common/section-header'
+import React from 'react'
 
 export default function FeaturesBlock() {
   return (
     <div className="mb-9 md:mb-10 xl:mb-12">
-      <SectionHeader
-        sectionHeading={"Feature"}
-      />
+      <SectionHeader sectionHeading={'Feature'} />
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcAssistant} w={10} h={10} />}

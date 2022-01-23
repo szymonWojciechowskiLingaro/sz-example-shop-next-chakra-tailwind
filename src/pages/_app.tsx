@@ -8,6 +8,9 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { ManagedUIContext } from '@contexts/ui.context'
 import ManagedModal from '@components/common/modal/managed-modal'
 import Drawer from '@components/common/drawer'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Noop: FC = ({ children }) => <>{children}</>
 
@@ -25,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <ManagedUIContext>
           <Layout pageProps={pageProps}>
             <Component {...pageProps} key={router.route} />
+            <ToastContainer />
           </Layout>
           <ManagedModal />
           <Drawer />

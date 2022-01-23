@@ -1,7 +1,7 @@
 import { useNewArrivalProductsQuery } from '@framework/product/get-all-new-arrival-products'
 import ProductsBlock from '@containers/ProductsBlock'
 
-export default function NewArrivalsProductFeed() {
+export default function AvailableProducts() {
   const { data, isLoading, error } = useNewArrivalProductsQuery({ limit: 10 })
   return (
     <ProductsBlock
