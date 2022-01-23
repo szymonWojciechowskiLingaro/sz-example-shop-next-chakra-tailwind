@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './scrollbar.css';
+@import './swiper-carousel.css';
 
 /* Write your own custom base styles here */
 @layer base {

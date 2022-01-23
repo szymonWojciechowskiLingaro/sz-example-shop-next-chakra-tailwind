@@ -1,15 +1,14 @@
 import {
   Drawer as ChakraDrawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Button,
 } from '@chakra-ui/react'
 import { useRef } from 'react'
 import { useUI } from '@contexts/ui.context'
+import Cart from '@components/cart'
 
 function Drawer() {
   const { displayCart, closeCart } = useUI()
@@ -22,20 +21,16 @@ function Drawer() {
         placement="right"
         onClose={closeCart}
         finalFocusRef={btnRef}
+        size="sm"
       >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>Shopping Cart</DrawerHeader>
 
-          <DrawerBody>heahehae hae haeh aeh hea</DrawerBody>
-
-          <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={closeCart}>
-              Cancel
-            </Button>
-            <Button colorScheme="blue">Save</Button>
-          </DrawerFooter>
+          <DrawerBody>
+            <Cart />
+          </DrawerBody>
         </DrawerContent>
       </ChakraDrawer>
     </>

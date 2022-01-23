@@ -47,11 +47,6 @@ export const footer = {
 					path: "/contact-us",
 				},
 				{
-					id: 2,
-					title: "Email",
-					path: "/",
-				},
-				{
 					id: 4,
 					title: "Phone",
 					path: "/",
@@ -71,6 +66,11 @@ export const footer = {
 					id: 2,
 					title: "About Us",
 					path: "/contact-us",
+				},
+				{
+					id: 2,
+					title: "Terms",
+					path: "/terms",
 				},
 			],
 		},
