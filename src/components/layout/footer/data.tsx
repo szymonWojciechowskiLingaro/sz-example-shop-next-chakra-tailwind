@@ -64,11 +64,6 @@ export const footer = {
 				},
 				{
 					id: 2,
-					title: "About Us",
-					path: "/contact-us",
-				},
-				{
-					id: 2,
 					title: "Terms",
 					path: "/terms",
 				},

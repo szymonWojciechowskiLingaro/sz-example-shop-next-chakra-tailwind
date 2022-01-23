@@ -1,11 +1,8 @@
 import Container from '@components/ui/container'
 import Layout from '@components/layout/layout'
 import PageHeader from '@components/ui/page-header'
-// import ContactForm from "@components/common/form/contact-form";
 import ContactInfoBlock from '@containers/ContactInfoBlock'
-import { FaWhatsapp, MdOutlineWhatshot, RiWhatsappFill } from 'react-icons/all'
-import Link from '@components/ui/link'
-import { IoHomeSharp } from 'react-icons/io5'
+import { IoLogoWhatsapp} from 'react-icons/io'
 
 export default function ContactUsPage() {
   return (
@@ -22,7 +19,7 @@ export default function ContactUsPage() {
                 Be in touch
               </h4>
             </div>
-            <RiWhatsappFill className="text-body transition duration-300 ease-in-out group-hover:text-black" />
+            <IoLogoWhatsapp className="text-body transition duration-300 ease-in-out group-hover:text-black" />
             WhatsApp
           </div>
         </div>
