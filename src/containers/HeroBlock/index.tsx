@@ -3,7 +3,6 @@ import { SwiperSlide } from "swiper/react";
 import Carousel from "@components/ui/carousel";
 import {heroBanner} from "@pages/home/config";
 import BannerCard from "@components/ui/BannerCard";
-import {ROUTES} from "@settings/routes";
 
 const breakpoints = {
 	"1500": {
@@ -38,7 +37,7 @@ const HeroBlock: React.FC = () => {
 					>
 						<BannerCard
 							banner={banner}
-							href={`${ROUTES.COLLECTIONS}/${banner.slug}`}
+							href={'products'}
 						/>
 					</SwiperSlide>
 				))}

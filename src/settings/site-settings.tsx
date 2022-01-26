@@ -19,12 +19,12 @@ export const siteSettings = {
 	site_header: {
 		menu: [
 			{
-				label: 'Inspiration',
-				href: "#"
+				label: 'Home',
+				href: "/"
 			},
 			{
-				label: 'Hire Designers',
-				href: '#',
+				label: 'Productos',
+				href: '/products',
 			},
 		],
 	},
