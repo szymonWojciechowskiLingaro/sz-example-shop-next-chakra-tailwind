@@ -1,7 +1,6 @@
 import { NextSeo } from "next-seo";
 import Header from "./header/header";
 import Footer from "./footer/footer";
-import MobileNavigation from "./mobile-navigation/mobile-navigation";
 
 const Layout: React.FC = ({ children }) => {
 	return (
